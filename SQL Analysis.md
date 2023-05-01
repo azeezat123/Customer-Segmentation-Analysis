@@ -3,7 +3,7 @@
 ```sql
  SELECT ROUND (COUNT (DISTINCT 
 	    CASE 
-		  WHEN number_of_returns >= 1 THEN product_id END) * 100.0 / COUNT (DISTINCT product_id), 2) AS percentage_returns,
+	  	WHEN number_of_returns >= 1 THEN product_id END) * 100.0 / COUNT (DISTINCT product_id), 2) AS percentage_returns,
        ROUND (COUNT (DISTINCT 
 	   CASE 
 		 WHEN number_of_returns = 0 THEN product_id END) * 100.0 / COUNT (DISTINCT product_id), 2) AS percentage_no_returns
@@ -18,12 +18,12 @@ FROM products;
 
 2.  Which age group has the highest total purchase value?
 ```sql
-SELECT 
-CASE WHEN age between 18 AND 24 THEN '18-24'
- 	   WHEN age between 25 AND 34 THEN '25-34'
-  	 WHEN age between 35 AND 44 THEN '35-44'
- 	   WHEN age between 45 AND 54 THEN '45-54'
- 	   WHEN age between 55 AND 64 THEN '55-64'
+SELECT CASE 
+	WHEN age between 18 AND 24 THEN '18-24'
+	WHEN age between 25 AND 34 THEN '25-34'
+	WHEN age between 35 AND 44 THEN '35-44'
+	WHEN age between 45 AND 54 THEN '45-54'
+	WHEN age between 55 AND 64 THEN '55-64'
  END AS age_group,
  ROUND(SUM(P.average_purchase_value):: numeric, 0) AS total_purchase
  FROM products p 
@@ -42,16 +42,16 @@ CASE WHEN age between 18 AND 24 THEN '18-24'
 
 ***
 
-3. What was the most common attack type in successful terrorist attacks?
+3. What are the most popular products among male and female customers?
 ```sql
-SELECT C.gender, p.product_purchased, COUNT (*) AS product_count
+SELECT C.gender, p.product_purchased, COUNT (*) AS purchase_count
 FROM customers c
 JOIN products p ON p.product_id = c.product_id
 GROUP BY 1, 2
 ORDER BY 2;
 ```
 
-| gender | product_Purchased | product_count |
+| gender | product_Purchased | purchase_count |
 |--------|------------------|---------------|
 | Female | Beauty Products  | 509           |
 | Male   | Beauty Products  | 491           |
@@ -81,14 +81,14 @@ SELECT CASE
 	WHEN credit_score BETWEEN 750 AND 799 THEN 'Very Good' 
 	ELSE'Excellent'
 END AS credit_score_range,
-ROUND(SUM(average_purchase_value)::numeric, 0) AS total_purchase
+ROUND(SUM(average_purchase_value)::numeric, 0) AS total_purchase_value
 FROM customers c 
 JOIN products p ON c.product_id = p.product_id
 GROUP BY 1
 ORDER BY 2 DESC;
 ```
 
-| credit_score_range | total_purchase |
+| credit_score_range | total_purchase_value |
 |--------------------|----------------|
 | Excellent          | 280399         |
 | Poor               | 139424         |
@@ -99,6 +99,8 @@ ORDER BY 2 DESC;
 
 
 ***
+
+5. Which occupational groups of customers have the highest average income, and does this income level affect their purchasing behaviour?
 ```sql
 SELECT c.occupation, 
        ROUND(AVG(c.income),0) average_income, 
@@ -108,3 +110,13 @@ JOIN products p ON c.product_id = p.product_id
 GROUP BY 1
 ORDER BY 2 DESC;
 ```
+
+| occupation   | average_income | total_purchase |
+|--------------|----------------|----------------|
+| Technician   | 40286          | 10127          |
+| Student      | 40151          | 9991           |
+| Executive    | 39916          | 10463          |
+| Manager      | 39822          | 9845           |
+| Homemaker    | 39787          | 9982           |
+| Professional | 39730          | 10066          |
+| Self-employed| 39184          | 10115          |
