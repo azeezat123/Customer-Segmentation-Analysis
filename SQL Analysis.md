@@ -27,7 +27,7 @@ SELECT CASE
  END AS age_group,
  ROUND(SUM(P.average_purchase_value):: numeric, 0) AS total_purchase
  FROM products p 
- JOIN customers c ON c.product_id = p.product_id
+ JOIN customers c ON c.product_id = p.id
  GROUP BY 1
  ORDER BY 2 DESC;
 ```
@@ -46,7 +46,7 @@ SELECT CASE
 ```sql
 SELECT C.gender, p.product_purchased, COUNT (*) AS purchase_count
 FROM customers c
-JOIN products p ON p.product_id = c.product_id
+JOIN products p ON p.id = c.product_id
 GROUP BY 1, 2
 ORDER BY 2;
 ```
@@ -83,7 +83,7 @@ SELECT CASE
 END AS credit_score_range,
 ROUND(SUM(average_purchase_value)::numeric, 0) AS total_purchase_value
 FROM customers c 
-JOIN products p ON c.product_id = p.product_id
+JOIN products p ON c.product_id = p.id
 GROUP BY 1
 ORDER BY 2 DESC;
 ```
@@ -106,7 +106,7 @@ SELECT c.occupation,
        ROUND(AVG(c.income),0) average_income, 
        SUM(no_of_online_orders) total_purchase
 FROM customers c 
-JOIN products p ON c.product_id = p.product_id
+JOIN products p ON c.product_id = p.id
 GROUP BY 1
 ORDER BY 2 DESC;
 ```
