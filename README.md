@@ -31,7 +31,7 @@ During the assessment, the only issue found was related to the naming convention
 ## Data Analysis
 After assessing the dataset, I identified that some attributes had repeating groups of values, which could lead to data redundancy and inconsistencies. Therefore, to avoid these issues, the dataset was normalized and broken down into two tables - Customers and Products - each with a single theme or entity.
 
-### To create the Customers table, I used the following SQL query:
+**To create the Customers table, I used the following SQL query:**
 
 ```sql
 CREATE TABLE customers (
@@ -52,8 +52,9 @@ CREATE TABLE customers (
   product_id varchar(10) REFERENCES products(id)
   );
 ```
+This query creates a table called "customers" with columns for each attribute in the dataset that pertains to customers. I specified a primary key for the table using the "customer_id" attribute to ensure that each record in the table is unique. I also added a foreign key constraint to reference the "id" attribute in the Products table.
 
-### To create the Products table, I used the following SQL query:
+**To create the Products table, I used the following SQL query:**
 ``` sql
  CREATE TABLE products (
     id varchar(10) PRIMARY KEY,
