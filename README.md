@@ -75,3 +75,6 @@ This query creates a table called "products" with columns for each attribute in 
 ![Screenshot of the Entity Relationship Diagram (ERD) image, added in the Markdown.](https://github.com/azeezat123/Customer-Purchasing-Behaviour-Analysis/blob/main/Entity%20Relationship%20Diagram.png)
 
 With the tables created, I loadED the data from the original dataset into these tables to start performing analyses on them.
+
+For my analysis i came up with a set of business questions i would like to tackle 
+
