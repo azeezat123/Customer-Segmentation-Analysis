@@ -28,7 +28,10 @@ The following steps were taken to assess the data quality:
 During the assessment, the only issue found was related to the naming convention of the attribute names. Therefore, I made changes to the names to conform to a suitable SQL naming format, considering that my analysis would be done using Postgres.
 
 
-### Tables Creation in postgreSQL
+## Data Analysis
+After assessing the dataset, I identified that some attributes had repeating groups of values, which could lead to data redundancy and inconsistencies. Therefore, to avoid these issues, the dataset was normalized and broken down into two tables - Customers and Products - each with a single theme or entity.
+
+### To create the Customers table, I used the following SQL query:
 
 ```sql
 CREATE TABLE customers (
@@ -48,8 +51,10 @@ CREATE TABLE customers (
 	total_credit_balance int,
   product_id varchar(10) REFERENCES products(id)
   );
+```
 
-
+### To create the Products table, I used the following SQL query:
+``` sql
  CREATE TABLE products (
     id varchar(10) PRIMARY KEY,
     product_purchased varchar(50),	
@@ -60,6 +65,7 @@ CREATE TABLE customers (
     number_of_returns int,
     total_value_returns float,
     locations varchar(50)
+  
 );
 ```
 ![Screenshot of the Entity Relationship Diagram (ERD) image, added in the Markdown.](https://github.com/azeezat123/Customer-Purchasing-Behaviour-Analysis/blob/main/Entity%20Relationship%20Diagram.png)
