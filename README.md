@@ -33,5 +33,5 @@ CREATE TABLE customers (
     locations varchar(50)
 );
 ```
-
+![Screenshot of the Entity Relationship Diagram (ERD) image, added in the Markdown.](https://github.com/azeezat123/Customer-Purchasing-Behaviour-Analysis/blob/main/Entity%20Relationship%20Diagram.png)
 
