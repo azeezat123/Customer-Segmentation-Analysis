@@ -1,14 +1,14 @@
 # Customer Segmentation Analysis
 
-> *Introduction* <br>
-> *Problem Statement* <br>
-> *Data Assesment* <br>
-> *Data Aanalysis* <br>
-> Data Visualization in Power BI* <br>
+> [Introduction](http://a.com) <br>
+> [Problem Statement](http://a.com) <br>
+> [Data Assesment](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-assessment)<br>
+> [Data Analysis](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-analysis) <br>
+> [Data Visualization](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-visualization) <br>
 > *Insights & Recommendations*
 
 
-## Inroduction
+## Introduction
 
 
 
@@ -28,10 +28,13 @@ The following steps were taken to assess the data quality:
 During the assessment, the only issue found was related to the naming convention of the attribute names. Therefore, I made changes to the attributes names to conform to a suitable SQL naming format, considering that my analysis would be done using Postgres.
 
 
+***
+
 ## Data Analysis
+
 After assessing the dataset, I identified that some attributes had repeating groups of values, which could lead to data redundancy and inconsistencies. Therefore, to avoid these issues, the dataset was normalized and broken down into two tables - Customers and Products - each with a single theme or entity.
 
-**To create the Customers table, I used the following SQL query:**
+- **To create the Customers table, I used the following SQL query:**
 
 ```sql
 CREATE TABLE customers (
@@ -54,7 +57,7 @@ CREATE TABLE customers (
 ```
 This query creates a table called "customers" with columns for each attribute in the dataset that pertains to customers. I specified a primary key for the table using the "customer_id" attribute to ensure that each record in the table is unique. To establish a relationship between the Customers and Products tables, I included a foreign key constraint to reference the "id" attribute in the Products table.
 
-**To create the Products table, I used the following SQL query:**
+- **To create the Products table, I used the following SQL query:**
 ``` sql
  CREATE TABLE products (
     id varchar(10) PRIMARY KEY,
@@ -200,3 +203,25 @@ ORDER BY 2 DESC;
 | Professional | 39730          | 10066          |
 | Self-employed| 39184          | 10115          |
 
+
+***
+
+## Data Visualization 
+The data visualization was created using Power BI. 
+
+
+*** 
+
+## Insights and Recommendations
+1. 83.83% of customers made returns, while the remaining 16.17% did not make any returns. This high return rate could indicate issues with product quality or dissatisfaction with the purchasing experience.
+2.the purchasing behavior of customers is relatively similar across different age groups. However, customers in the 18-24 age group have a slightly lower total purchase value compared to the other age groups.This could potentially indicate that the purchasing power of customers in the 18-24 age group is relatively lower, or that they have different preferences in terms of product categories or brands.
+3. Both genders have nearly similar purchase counts across all product categories, showing that they are gender-neutral and have the potential to appeal to a larger customer base, regardless of gender.
+4. Customers with "Excellent" credit scores are the most valuable to the company, while those with "Bad" credit scores are the least valuable, which may indicate that they are not as financially stable and may require different marketing strategies to target their purchasing behavior. Customers with a "Poor" credit score, on the other hand, have made a higher total purchase value than those with a "Fair" or "Good" credit score, indicating that they may be more willing to make purchases despite financial constraints, making them a possible target market for the company's marketing efforts.
+
+
+
+## Recommendations 
+1. Conduct a customer survey to identify issues causing high return rates and make necesary improvements to the product or purchasing experience, Additionally, the return policy should be reviewed to ensure that it strikes a balance between being customer-friendly and sustainable for the business.
+2. the business could explore offering targeted promotions or discounts to customers in the 18-24 age group to incentivize them to make more purchases. Additionally, they could consider partnering with influencers or social media platforms to reach a younger demographic and increase brand awareness.
+3. To further engage customers, the company may want to consider offering gender-specific promotions or product bundles.
+4. The company should consider tailoring their marketing strategies to cater to customers with different credit score ranges. For customers with "Excellent" credit scores, the focus should be on maintaining customer loyalty and offering premium products or services. For customers with "Poor" credit scores, the company should offer promotions or product bundles that cater to their budget constraints while still providing value.
