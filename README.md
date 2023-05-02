@@ -1,5 +1,34 @@
-# Customer-Purchasing-Behaviour-Analysis
-## Tables Creation in postgreSQL
+# Customer Segmentation Analysis
+
+> *Introduction* <br>
+> *Problem Statement* <br>
+> *Data Assesment* <br>
+> *Data Aanalysis* <br>
+> Data Visualization in Power BI* <br>
+> *Insights & Recommendations*
+
+
+## Inroduction
+
+
+
+## Problem Statement
+
+
+## Data Assessment
+
+To ensure that the original dataset was not altered during the assessment process, I started by duplicating the sheet in Excel. This was done to avoid losing the original dataset in case it was needed for future referencing or cross-checking. The dataset consisted of 7000 rows and 23 columns.
+
+The following steps were taken to assess the data quality:
+
+* I used the COUNTIF function in combination with the IF function to check for missing or null values. The formula used was: =IF(COUNTIF(A2:W7001, " ") >0, "Null value", "No null value"). Fortunately, no missing or null values were found.
+* Since each customer has a unique ID, I utilized conditional formatting to identify and highlight any duplicate ID numbers that may have occurred as a result of data collection or entry errors. However, no duplicates were found.
+* I used the data validation tool to check for inconsistent data types across all columns and ensure that the data was accurate and consistent.
+
+During the assessment, the only issue found was related to the naming convention of the attribute names. Therefore, I made changes to the names to conform to a suitable SQL naming format, considering that my analysis would be done using Postgres.
+
+
+### Tables Creation in postgreSQL
 
 ```sql
 CREATE TABLE customers (
