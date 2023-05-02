@@ -69,5 +69,9 @@ This query creates a table called "customers" with columns for each attribute in
   
 );
 ```
+This query creates a table called "products" with columns for each attribute in the dataset that pertains to products. I specified a primary key for the table using the "id" attribute to ensure that each record in the table is unique.
+
+### Entity Relationship Diagram
 ![Screenshot of the Entity Relationship Diagram (ERD) image, added in the Markdown.](https://github.com/azeezat123/Customer-Purchasing-Behaviour-Analysis/blob/main/Entity%20Relationship%20Diagram.png)
 
+With the tables created, I loadED the data from the original dataset into these tables to start performing analyses on them.
