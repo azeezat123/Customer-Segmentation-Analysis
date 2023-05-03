@@ -1,6 +1,6 @@
 # Customer Segmentation Analysis
 
-> [Introduction]([http://a.com](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#introduction)) <br>
+> [Introduction](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#introduction) <br>
 > [Data Assesment](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-assessment)<br>
 > [Data Analysis](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-analysis) <br>
 > [Data Visualization](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-visualization) <br>
@@ -239,3 +239,9 @@ interact with the dashboard [here](https://github.com/azeezat123/Customer-Segmen
 3. To further engage customers, the company may want to consider offering gender-specific promotions or product bundles.
 4. The company should consider tailoring their marketing strategies to cater to customers with different credit score ranges. For customers with "Excellent" credit scores, the focus should be on maintaining customer loyalty and offering premium products or services. For customers with "Poor" credit scores, the company should offer promotions or product bundles that cater to their budget constraints while still providing value.
 5. While income level does not seem to affect purchasing behavior significantly, the company may still want to offer promotions or products that appeal to customers with higher income levels to increase their purchases.
+
+
+***
+
+Thank you for taking the time to read through this project. If you've made it this far, I truly appreciate your interest and attention. If you have any contributions or suggestions, please don't hesitate to reach out to me. I would love to hear from you and discuss any ideas you may have. You can find me on 
+[Twitter](https://twitter.com/zezaht) or on [LinkedIn](https://www.linkedin.com/in/sogbesanteni)
