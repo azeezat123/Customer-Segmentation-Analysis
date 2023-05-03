@@ -1,11 +1,11 @@
 # Customer Segmentation Analysis
 
-> [Introduction](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#introduction) <br>
-> [Data Assesment](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-assessment)<br>
-> [Data Analysis](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-analysis) <br>
-> [Data Visualization](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-visualization) <br>
-> [Insights](https://github.com/azeezat123/Customer-Segmentation-Analysis/blob/main/README.md#insights) <br>
-> [Recommendations](https://github.com/azeezat123/Customer-Segmentation-Analysis/blob/main/README.md#recommendations) <br>
+> [Introduction](https://github.com/azeezat123/Customer-Segmentation-Analysis#introduction) <br>
+> [Data Assesment](https://github.com/azeezat123/Customer-Segmentation-Analysis#data-assessment)<br>
+> [Data Analysis](https://github.com/azeezat123/Customer-Segmentation-Analysis#data-analysis) <br>
+> [Data Visualization](https://github.com/azeezat123/Customer-Segmentation-Analysis#data-visualization) <br>
+> [Insights](https://github.com/azeezat123/Customer-Segmentation-Analysis#insights) <br>
+> [Recommendations](https://github.com/azeezat123/Customer-Segmentation-Analysis#recommendations) <br>
 
 
 ## Introduction
