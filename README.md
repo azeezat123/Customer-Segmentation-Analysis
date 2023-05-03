@@ -1,7 +1,7 @@
 # Customer Segmentation Analysis
 
 > [Introduction](https://github.com/azeezat123/Customer-Segmentation-Analysis#introduction) <br>
-> [Data Assesment](https://github.com/azeezat123/Customer-Segmentation-Analysis#data-assessment)<br>
+> [Data Assessment](https://github.com/azeezat123/Customer-Segmentation-Analysis#data-assessment)<br>
 > [Data Analysis](https://github.com/azeezat123/Customer-Segmentation-Analysis#data-analysis) <br>
 > [Data Visualization](https://github.com/azeezat123/Customer-Segmentation-Analysis#data-visualization) <br>
 > [Insights](https://github.com/azeezat123/Customer-Segmentation-Analysis#insights) <br>
