@@ -219,7 +219,7 @@ The data visualization was created using Power BI.
 
 ![Image](https://github.com/azeezat123/Customer-Segmentation-Analysis/blob/main/Customer%20Demographics%20and%20Purchasing%20Behavior.png)
 
-interact with the dashboard [here](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-visualization)
+interact with the dashboard [here](https://www.novypro.com/project/customer-demographics-and-purchasing-behavior)
 
 *** 
 
