@@ -1,20 +1,27 @@
 # Customer Segmentation Analysis
 
-> [Introduction](http://a.com) <br>
-> [Problem Statement](http://a.com) <br>
+> [Introduction]([http://a.com](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#introduction)) <br>
 > [Data Assesment](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-assessment)<br>
 > [Data Analysis](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-analysis) <br>
 > [Data Visualization](https://github.com/azeezat123/Customer-Segmentation-Analysis/edit/main/README.md#data-visualization) <br>
-> [Insights](http://a.com) <br>
-> [Recommendations](http://a.com) <br>
+> [Insights](https://github.com/azeezat123/Customer-Segmentation-Analysis/blob/main/README.md#insights) <br>
+> [Recommendations](https://github.com/azeezat123/Customer-Segmentation-Analysis/blob/main/README.md#recommendations) <br>
 
 
 ## Introduction
 
+I recently had the opportunity to participate in my first hackathon, Pickl.AI’s Datathon-4. During the final phase of the competition, I was tasked with analyzing a company's dataset to solve a specific problem statement. 
+
+The problem statement was centered around the growing complexities of customer demand, which have made it mandatory for companies to focus on customer satisfaction. The solution proposed was to segment customers based on their preferences, age groups, and geographical locations. This approach can help organizations create a personalized experience for each user group, leading to increased brand loyalty.
+
+For instance, if an e-commerce business segments its customers by age and preferences, then it can offer personalized product recommendations based on these preferences. This kind of personalization demonstrates to customers that their individual needs are a priority for the organization, leading to repeat purchases and increased customer satisfaction.
+
+The significance of customer segmentation cannot be overstated, as it is a powerful tool that can help businesses generate more customers and increase revenue. As part of the competition, I was required to come up with various insights to achieve these goals and build an interactive dashboard.
+
+Overall, the challenge was an enriching experience, and I learned a great deal about the importance of customer segmentation in today's competitive business landscape.
 
 
-## Problem Statement
-
+***
 
 ## Data Assessment
 
